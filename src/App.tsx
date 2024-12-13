@@ -27,9 +27,9 @@ const App: React.FC = () => {
   const searchMovies = async (title: string): Promise<void> => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
-
-   
-    setMovies(data.Search || []);
+    
+    alert(movie.length);
+    setMovies(data.Search);
   };
 
 
