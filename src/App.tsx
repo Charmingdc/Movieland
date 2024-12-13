@@ -5,7 +5,7 @@ import SearchIcon from './assets/search.svg'
 import './App.css'
 
 
-const API_URL: string = "http://www.omdbapi.com?apikey=b6003d8a";
+const API_URL: string = "https://www.omdbapi.com?apikey=b6003d8a";
 
 interface Movie {
   imdbID: string;
