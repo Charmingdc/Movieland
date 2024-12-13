@@ -21,7 +21,7 @@ const App: React.FC = () => {
   
     
   useEffect(() => {
-    searchMovies('Superman');
+    searchMovies('Batman');
   }, []);
 
   const searchMovies = async (title: string): Promise<void> => {
@@ -30,7 +30,6 @@ const App: React.FC = () => {
     
  
     setMovies(data.Search);
-    alert(movies.length)
   };
 
 
@@ -52,7 +51,7 @@ const App: React.FC = () => {
         />
       </div>
 
-      {movies.length > 0 ? (
+      {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie) => (
             <MovieCard movie={movie} />

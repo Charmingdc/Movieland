@@ -6,7 +6,7 @@ interface MovieProps {
   Type: string;
 }
 
-const MovieCard: React.FC<{movie: MovieProps}> = ({movie: { imdbID, Year, Poster, Title, Type } }) => {
+const MovieCard: React.FC<{movie: MovieProps}> = ({movie: { imdbID, Year, Poster, Title, Type }}) => {
   return (
     <div className="movie" key={imdbID}>
       <div>
