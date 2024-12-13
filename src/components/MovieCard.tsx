@@ -1,4 +1,4 @@
-interface {
+interface MovieProps {
   imdbID: string;
   Year: string;
   Poster: string;
