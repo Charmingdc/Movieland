@@ -21,7 +21,7 @@ const App: React.FC = () => {
   
     
   useEffect(() => {
-    searchMovies('Batman');
+    searchMovies('Superman');
   }, []);
 
   const searchMovies = async (title: string): Promise<void> => {
