@@ -20,8 +20,9 @@ const App: React.FC = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
 
   useEffect(() => {
-    searchMovies('Marvel');
+    searchMovies('Superman');
   }, []);
+
 
   const searchMovies = async (title: string): Promise<void> => {
     const response = await fetch(`${API_URL}&s=${title}`);
