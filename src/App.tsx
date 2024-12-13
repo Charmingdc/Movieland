@@ -19,10 +19,6 @@ const App: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [movies, setMovies] = useState<Movie[]>([]);
 
-  useEffect(() => {
-    searchMovies('Superman');
-  }, []);
-
 
   const searchMovies = async (title: string): Promise<void> => {
     const response = await fetch(`${API_URL}&s=${title}`);
@@ -31,6 +27,12 @@ const App: React.FC = () => {
    
     setMovies(data.Search || []);
   };
+  
+  
+  useEffect(() => {
+    searchMovies('Superman');
+  }, []);
+
 
   return (
     <div className="app">
